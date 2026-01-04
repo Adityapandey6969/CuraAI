@@ -4,9 +4,9 @@ CuraAI is a simple, browser-based **Clinical Decision Support System (CDSS)** pr
 
 This project is built using **HTML, CSS, and JavaScript** and focuses on clarity, usability, and responsible design rather than complex backend logic.
 
----
 
-## 📌 Project Overview
+
+ Project Overview
 
 CuraAI allows a user (doctor/clinician) to:
 - Enter basic patient details
@@ -16,9 +16,9 @@ CuraAI allows a user (doctor/clinician) to:
 
 The application is intended as a **decision-support tool**, not an automated diagnostic system.
 
----
 
-## 🛠️ Technologies Used
+
+ Technologies Used
 
 - **HTML** – Structure of the application  
 - **CSS** – Styling and layout  
@@ -26,7 +26,5 @@ The application is intended as a **decision-support tool**, not an automated dia
 
 No frameworks or libraries are used, making the project easy to understand and modify.
 
----
 
-## 📂 Project Structure
 
