@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CuraAI - Clinical Decision Support</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>CuraAI</h1>
+    <p>Clinical Decision Support System</p>
+  </header>
+
+  <!-- DASHBOARD -->
+  <section id="dashboard">
+    <h2>Dashboard</h2>
+    <button onclick="showIntake()">New Patient Analysis</button>
+  </section>
+
+  <!-- PATIENT INTAKE -->
+  <section id="intake" class="hidden">
+    <h2>Patient Intake</h2>
+
+    <label>Name</label>
+    <input type="text" id="name">
+
+    <label>Age</label>
+    <input type="number" id="age">
+
+    <label>Gender</label>
+    <select id="gender">
+      <option value="">Select</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <label>Symptoms</label>
+    <textarea id="symptoms" placeholder="e.g. fatigue, thirst"></textarea>
+
+    <button onclick="analyze()">Analyze</button>
+    <button class="secondary" onclick="goBack()">Back</button>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="hidden">
+    <h2>Diagnosis Results</h2>
+
+    <div class="card">
+      <p><strong>Possible Condition:</strong> Type 2 Diabetes</p>
+      <p><strong>Probability:</strong> 72%</p>
+      <p><strong>Risk Level:</strong> Moderate</p>
+
+      <h4>Recommended Tests</h4>
+      <ul>
+        <li>HbA1c</li>
+        <li>Fasting Blood Sugar</li>
+      </ul>
+
+      <h4>Treatment Pathway</h4>
+      <p>Lifestyle modification and medical consultation</p>
+    </div>
+
+    <button onclick="restart()">New Patient</button>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <footer>
+    <p>
+      This system provides clinical decision support only.
+      Final medical decisions must be made by a qualified healthcare professional.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
